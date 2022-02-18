@@ -39,6 +39,7 @@ h1 {
     #two {
         border-top: 10px solid gray; 
     }
+}
 
 /* 5. When the viewport is in landscape mode (Width is greater than height) have the three h1 elements display in a row (HINT: Flexbox) */
 @media (orientation:landscape){
@@ -68,5 +69,21 @@ h1 {
     
 /* BONUS-2. Have the “Two” h1 text color match the background color set to the body element whenever it changes from white to another color.  
 If completed correctly the “Two” h1 will seem invisible when the background color set to the body is NOT white (HINT: Navy & Orange)*/
+@media(max-width: 800px) {
+    #two {
+        color: navy;
+        
+    }
+}
+@media(max-width: 600px) {
+    #two {
+       color: orange;
+    }
+}
 
 /* BONUS-3. Make all the text on the webpage Italicized when the viewport width is a length from 750px to 775px AND the viewport height is a length from 550px to 575px */
+/* @media only screen and (min-width: 750px) and (max-width: 575px) and (min-height: 550px) and (max-height: 575px){ 
+    body {
+        font-style: italic;
+    }
+}*/
